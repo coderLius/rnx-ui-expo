@@ -1,0 +1,48 @@
+{
+  "name": "rnx-ui",
+  "version": "0.18.0",
+  "description": "A UI Lib for React Native",
+  "keywords": [
+    "rnx",
+    "ui",
+    "react-native"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dragonwong/rnx-ui"
+  },
+  "author": {
+    "name": "wangdagen",
+    "url": "http://wangdagen.com/"
+  },
+  "main": "node_modules/expo/AppEntry.js",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "start2": "react-native-scripts start",
+    "lint": "eslint . *.js --cache",
+    "test": "jest"
+  },
+  "dependencies": {
+    "expo": "^23.0.0",
+    "react": "^16.0.0",
+    "react-native": "0.50.3",
+    "react-native-deprecated-custom-components": "^0.1.1",
+    "react-navigation": "^1.0.0-beta.21"
+  },
+  "devDependencies": {
+    "babel-jest": "18.0.0",
+    "babel-preset-react-native": "1.9.1",
+    "eslint-config-rnx": "*",
+    "jest": "18.1.0",
+    "jest-expo": "^22.0.0",
+    "pre-commit": "^1.2.2",
+    "react-native-scripts": "^1.8.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "pre-commit": [
+    "lint"
+  ]
+}
